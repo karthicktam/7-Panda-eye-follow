@@ -16,13 +16,13 @@ export default function App() {
       leftRef.current.clientWidth / 2;
     const ly =
       leftRef.current.getBoundingClientRect().top +
-      leftRef.current.clientWidth / 2;
+      leftRef.current.clientHeight / 2;
     const rx =
       rightRef.current.getBoundingClientRect().left +
       rightRef.current.clientWidth / 2;
     const ry =
       rightRef.current.getBoundingClientRect().top +
-      rightRef.current.clientWidth / 2;
+      rightRef.current.clientHeight / 2;
 
     const radianL = Math.atan2(e.pageX - lx, e.pageY - ly);
     const radianR = Math.atan2(e.pageX - rx, e.pageY - ry);
